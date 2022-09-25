@@ -1,0 +1,26 @@
+.benefits {
+    padding-top: 94px;
+    
+    &__list:not(:last-of-type) {
+      margin-right: 30px;
+    }
+    &-wrap {
+      width: 270px;
+    }
+    &__title {
+      color: var(--title-text-color);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    &__icon {
+      display: flex;
+      background-color: var(--background-color-light);
+      align-items: center;
+      padding: 25px 100px;
+      margin-bottom: 30px;
+    }
+    @include common-flex;
+  }

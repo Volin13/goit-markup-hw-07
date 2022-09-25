@@ -1,0 +1,63 @@
+.team {
+    background-color: var(--background-color-light);
+
+    &__position-main {
+      margin-bottom: 30px;
+    }
+    &__position-scnd {
+      margin-bottom: 10px;
+    }
+    &__icons {
+      @include icons-positioning;
+      width: 100%;
+      margin-top: 16px;
+    }
+    &__icons li:not(:last-of-type) {
+      margin-right: 10px;
+    }
+    &__box {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      background-color: var(--primary-white-color);
+      padding-bottom: 30px;
+    }
+    &__position:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__list{
+      @include common-flex;
+    }
+  }
+
+  .icons__circle {
+    @include icons-positioning;
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    fill: var(--icon-color);
+    @include fill-transition;
+    @include background-transition;
+  }
+  
+  .list__wrap:hover,
+  .list__wrap:focus,
+  .icons__circle:hover,
+  .icons__circle:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+  
+  .mates-name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+  
+  .mates-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }

@@ -1,0 +1,98 @@
+.footer {
+  background-color: var(--background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__auth {
+    color: var(--nav-address-color);
+    letter-spacing: inherit;
+  }
+
+  &__input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__form {
+    margin-left: 93px;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary-white-color);
+  }
+  &-flex,
+  &__form {
+    display: flex;
+  }
+
+  &__auth:focus,
+  &__auth:hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.address {
+  color: var(--primary-white-color);
+  letter-spacing: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__box {
+    padding-right: 24px;
+  }
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+  &__wrap:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.social {
+  margin-left: 70px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__list li:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  &__tittle {
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+  &__tittle-position{
+    margin-bottom: 20px;
+
+  }
+}
+
+.list__wrap {
+  @include icons-positioning;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  fill: var(--primary-white-color);
+  background-color: var(--footer-sm-bckground);
+  @include background-transition;
+}
+.form-position{
+  padding-top: 8px;
+}
